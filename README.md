@@ -52,7 +52,7 @@ There are 5 feature map levels (due to FPN structure) and the (w_i, h_i) represe
 #### 3.4 Target of Box Head
 
 <img src= "https://github.com/chanhopark00/FCOS_obb/blob/master/imgs/3.PNG" width="400">
-we want each of the values to be equal to the ground truth; due to the nature of logarithm the closer the value is to 1 the closer the value will be to 0. Hence we apply SmoothL1 loss to this offset. This offset is consistent with the RoI tranformer’s rotated region proposal network offset.
+Here the variables with * superscript are the ground truth. Since we want each of the values to be equal to the ground truth, we set the target to be a value which 0 represents equality with the ground truth. With this target, we apply SmoothL1 loss. This offset is consistent with the RoI tranformer’s rotated region proposal network offset.
 
 #### 3.5. Data Pre/post processing
 
@@ -106,6 +106,26 @@ Error analysis and improvements
 | R3Det | 0.66 |
 | RoI Transformer | 0.72|
 | FCOS-OBB (Mine) | 0.59 |
+
+#### 4.4 Top 1 class detection
+
+|class|mAP|
+|---|---|
+|plane|0.8644827688468113|
+|baseball-diamond|0.6303450416768105|
+|bridge|0.2836234662432951|
+|ground-track-field|0.4882575648855269|
+|small-vehicle|0.6472025055646514|
+|large-vehicle|0.5840595934115256|
+|ship|0.6647569189809845|
+|tennis-court|0.9068834035721455|
+|basketball-court|0.6929957009396605|
+|storage-tank|0.7713682587649533|
+|soccer-ball-field|0.44913695971245626|
+|roundabout|0.5449657166644799|
+|harbor|0.5146133776276023|
+|swimming-pool|0.3366705928715302|
+|helicopter|0.3861791785489448|
 
 
 ## 5. Further Improvement
