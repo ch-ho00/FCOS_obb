@@ -1,5 +1,21 @@
 # FCOS_obb
-Oriented Bounding box detector modifying FCOS
+Oriented Bounding box detector modifying FCOS. This work is built on top of MMDetection.
+
+To run the codes refer to the instruction of (MMDetection instruction)[https://github.com/open-mmlab/mmdetection]. 
+
+My library version and configurations were:
+
+        mmcv                 0.2.16               
+        mmdet                1.0rc0+90c4798
+        torch                1.1.0                
+        torchvision          0.2.1                
+        Cython               0.29.15              
+        numpy                1.17.4               
+        gcc                  4.9.4
+        CUDA                 9.0
+
+
+
 
 ## 1.Aim
 
