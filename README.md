@@ -1,7 +1,7 @@
 # FCOS_obb
 Oriented Bounding box detector modifying FCOS. This work is built on top of MMDetection.
 
-To run the codes refer to the instruction of (MMDetection instruction)[https://github.com/open-mmlab/mmdetection]. 
+To run the codes refer to the instruction of [MMDetection instruction](https://github.com/open-mmlab/mmdetection).
 
 My library version and configurations were:
 
